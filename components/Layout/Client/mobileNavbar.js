@@ -44,7 +44,8 @@ export default function MobileNav() {
                   height={70}
                   quality={100}
                   alt={settings.settingsData.name}
-                  style={{ width: "100%", height: "auto" }}
+                  // style={{ width: "100%", height: "auto" }}
+                  style={{ width: "100%"}}
                 />
               )}
             </Link>
