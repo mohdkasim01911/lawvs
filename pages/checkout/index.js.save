@@ -203,7 +203,7 @@ const Checkout = () => {
         setDeliveryInfo(deliveryData);
       } else {
         const deliveryData = {
-          type: "India Delivery",
+          type:"India Delivery",
           cost: 0,
           area: null,
         };
@@ -219,7 +219,7 @@ const Checkout = () => {
     );
     if (area.length > 0) {
       const deliveryData = {
-        type: "India Delivery",
+        type: "Local Delivery",
         cost: areaInfo[0]?.price,
         area: areaInfo[0]?.name,
       };
@@ -620,9 +620,9 @@ const Checkout = () => {
               <option value="International Delivery">
                 International Delivery
               </option>
-              <option value="India Delivery">India Delivery</option>
+              <option value="Local Delivery">Local Delivery</option>
             </select>
-            {deliveryInfo.type && deliveryInfo.type === "India Delivery" && (
+            {deliveryInfo.type && deliveryInfo.type === "Local Delivery" && (
               <div>
                 <label>{t("select_delivery_area")}*</label>
                 <select

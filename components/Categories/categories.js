@@ -12,8 +12,8 @@ function Category(props) {
               <ImageLoader
                 src={props.img}
                 alt={props.name}
-                width={80}
-                height={80}
+                width={120}
+                height={120}
               />
             </div>
           </figure>
